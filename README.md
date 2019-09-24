@@ -1,6 +1,6 @@
 # Extract Movie from Blu-ray Disk
 [MakeMKV](https://www.makemkv.com) is able to extract titles from a Blu-ray disk
-via a GUI or through its command-line tool [makemkvcon](https://www.makemkv.com/developers/usage.txt).
+via GUI or through its command-line tool [makemkvcon](https://www.makemkv.com/developers/usage.txt).
 
 ## Show titles
 To command below displays information about */dev/sr0* (*disc:1*):
@@ -27,7 +27,7 @@ HandBrakeCLI -i My_Movie.mkv -t 1 --scan
 
 ## Convert video
 The shell script below will convert the file *Aladdin.mkv*, with audio tracks 2 and 5,
-to the folder */data/Movies*:
+and save the file in the folder */data/Kids_Movies*:
 ```bash
 #! /bin/bash
 movie=Aladdin_2019.mkv
