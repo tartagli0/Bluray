@@ -53,6 +53,12 @@ Install the CLI tool with the command:
 dnf install HandBrake-cli
 ```
 
+*Fedora* does not give a user accounts access to optical disk drives (i.e., Blu-ray, DVD, CD) by
+default. To fix this, add your user to the *cdrom* group with the command:
+```bash
+usermod -a -G cdrom username
+```
+
 # Extract Movie from Blu-ray Disk
 The CLI tool used to rip movies with *MakeMKV* is named *makemkvcon*.
 The command below can be used to display all available titles in a disk:
